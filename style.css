@@ -674,27 +674,34 @@ footer p {
 /****** SECTION SOBRE ******/
 .section-about {
     background-color: #ffffff;
-    padding: 0 7%;
+    margin: 0 7%;
 }
 
 .about-inner {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 24px;
+    gap: 4rem;
 }
 
-.sobre-title {
-    padding-bottom: 2rem;
+.quem-somos-title {
+    padding: 4% 0 2% 0;
 }
 
 .about-text p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    text-align: justify;
     margin-bottom: 8px;
-    line-height: 1.4;
 }
 
 .about-image-wrapper {
-    margin-top: 16px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#central-da-estampa-img {
+    height: 10%;
+    width: 70%;
 }
 
 .image-placeholder {
@@ -1091,6 +1098,10 @@ footer p {
 
 /****** TELAS MENORES QUE 580PX ******/
 @media (max-width: 580px) {
+    /* Nav */
+    .nav-logo {
+    height: 3.5rem;
+    }
 
     /* Section Destaques */
     #destaques,
@@ -1141,6 +1152,33 @@ footer p {
     padding: 3% 7%;
 }
 }
+/****** TELAS MENORES QUE 380PX ******/
+@media (max-width: 380px) {
+    /* Nav */
+    .nav-logo {
+    height: 3.5rem;
+    }
+
+    /* Section Clientes */
+    .cliente-card {
+        height: 17rem;
+    }
+
+    /* Section Faq */
+    .faq-pergunta {
+        width: 20rem;
+    }
+
+    .faq-resposta {
+        width: 20rem;
+    }
+
+    /* Section Informações */
+    #informacoes {
+        padding-bottom: 6%;
+    }
+}
+
 
 /* Configuração para uma "animação" quando o menu abrir */
 @keyframes descerMenu {
