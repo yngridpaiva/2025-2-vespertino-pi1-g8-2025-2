@@ -1,0 +1,1156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ========== CONFIGURAÇÕES DAS PÁGINAS ========== */
+/****** RESET DA PÁGINA ******/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+    /* Faz a rolagem parar antes de bater no header */
+}
+
+body {
+    background-color: #ffffff;
+    padding-top: 6.5rem;
+}
+
+/* ========== HOMEPAGE ========== */
+/****** NAV ******/
+header {
+    background-color: #000000;
+    width: 100%;
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-logo {
+    height: 4.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 3.3vw;
+}
+
+.a-navbar,
+.a-orcamento {
+    font: 700 1.1rem Montserrat, sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.a-navbar:link,
+.a-navbar:visited {
+    color: #ffffff;
+}
+
+.a-navbar:hover,
+.a-navbar:active {
+    color: #D1450F;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.orcamento {
+    display: flex;
+    align-items: center;
+}
+
+.a-orcamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 9rem;
+    height: 3rem;
+    background-color: #00916e;
+    border-radius: 1.875rem;
+}
+
+.a-orcamento:link,
+.a-orcamento:visited {
+    color: #ffffff;
+}
+
+.a-orcamento:hover,
+.a-orcamento:active {
+    background-color: rgba(58, 206, 169, 0.61);
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header-icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    fill: #ffffff;
+    cursor: pointer;
+}
+
+.header-icon:link,
+.header-icon:visited {
+    fill: #ffffff;
+}
+
+.header-icon:hover,
+.header-icon:active {
+    fill: #D1450F;
+}
+
+.burger-icon {
+    display: none;
+}
+
+.burger-risk {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Efeito de X quando aperta o burger */
+#menu-toggle:checked~.burger-icon .burger-risk:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+}
+
+#menu-toggle:checked~.burger-icon .burger-risk:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked~.burger-icon .burger-risk:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -8px);
+}
+
+/****** SECTION INICIO (BANNER) ******/
+#banner-inicio {
+    width: 100%;
+    height: 35%;
+}
+
+
+/****** SECTION DESTAQUES ******/
+#destaques {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 7%;
+}
+
+.homepage-title,
+.sobre-title {
+    font: 700 2rem 'Montserrat', sans-serif;
+    color: #0080FF;
+}
+
+.destaques-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+p {
+    font: 300 1.25rem 'Open Sans', sans-serif;
+}
+
+.destaques-p {
+    padding: 0 6%;
+    text-align: center;
+    margin-bottom: 5vw;
+    color: #000000;
+}
+
+.produtos-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+}
+
+.produtos-card {
+    width: 15rem;
+}
+
+.produtos-img {
+    width: 15rem;
+    height: 20rem;
+}
+
+.produtos-text {
+    margin-top: 0.5rem;
+}
+
+.produtos-h2 {
+    font: 400 1.5rem 'Open Sans', sans-serif;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.produtos-p {
+    font: 300 1rem 'Open Sans', sans-serif;
+    color: #000000;
+}
+
+.produtos-botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.a-produtos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font: 800 0.8rem 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.a-ver-mais {
+    background-color: #010B40;
+}
+
+.a-whatsapp {
+    background-color: #00916E;
+}
+
+/****** SECTION CLIENTES ******/
+#clientes {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 8%;
+    gap: 3.5rem;
+}
+
+.clientes-title {
+    text-align: center;
+}
+
+.clientes-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3.063rem;
+}
+
+.clientes-text {
+    width: 35rem;
+}
+
+.clientes-p {
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Inicio do carrosel */
+.carrossel-container {
+    min-width: 320px;
+    max-width: 550px;
+    position: relative;
+}
+
+.carrossel-container input[type="radio"] {
+    /* Esconde os inputs */
+    display: none;
+}
+
+/* Inputs que são usados para a lógica dos movimentos dos slides, ou seja, simulam uma animação JS */
+#radio01:checked~.janela-visivel .slides-track {
+    transform: translateX(0%);
+}
+
+#radio02:checked~.janela-visivel .slides-track {
+    transform: translateX(-33.333%);
+}
+
+#radio03:checked~.janela-visivel .slides-track {
+    transform: translateX(-66.666%);
+}
+
+.janela-visivel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-bottom: 3.5rem;
+}
+
+.slides-track {
+    display: flex;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+    /* Animação suave de passagem dos slides */
+}
+
+.slide {
+    width: 33.333%;
+    padding: 10px;
+}
+
+.cliente-card {
+    background: #F4FAFF;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 13rem;
+}
+
+.cliente-info-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cliente-info-header img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.cliente-info-header h3 {
+    font: 800 1rem 'Open Sans', sans-serif;
+    margin: 0;
+    color: #000;
+}
+
+.cliente-info-header .empresa {
+    font: 400 0.7rem 'Open Sans', sans-serif;
+    color: #000;
+}
+
+.depoimento {
+    font: 400 0.9rem 'Open Sans', sans-serif;
+    color: #000;
+    padding: 0 4rem 0.75rem 5rem;
+    text-align: justify;
+}
+
+.redesocial {
+    font: 400 0.7rem 'Open Sans', sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+/* Navegação das setas e das bolinhas do carrosel */
+/* Configuração das setas */
+.navegacao-setas {
+    position: absolute;
+    bottom: 0.938rem;
+    width: 100%;
+    padding: 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    pointer-events: none;
+    z-index: 30;
+}
+
+.caso-slide01,
+.caso-slide02,
+.caso-slide03 {
+    display: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#radio01:checked~.navegacao-setas .caso-slide01 {
+    display: flex;
+}
+
+#radio02:checked~.navegacao-setas .caso-slide02 {
+    display: flex;
+}
+
+#radio03:checked~.navegacao-setas .caso-slide03 {
+    display: flex;
+}
+
+/* Estilo da seta */
+.seta-prev,
+.seta-next {
+    pointer-events: auto;
+    cursor: pointer;
+    color: #0080FF;
+    font-size: 2rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.seta-prev:hover,
+.seta-next:hover {
+    color: #5bbbff;
+    transform: scale(1.1);
+}
+
+/* Configuração das setas */
+.navegacao-bolinhas {
+    position: absolute;
+    bottom: 1.563rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.bolinha {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: #E6EFF8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#radio01:checked~.navegacao-bolinhas label[for="radio01"],
+#radio02:checked~.navegacao-bolinhas label[for="radio02"],
+#radio03:checked~.navegacao-bolinhas label[for="radio03"] {
+    background: #0080FF;
+    transform: scale(1.2);
+}
+
+
+/****** SECTION FAQ ******/
+#faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4% 7%;
+}
+
+.faq-title {
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: auto auto 1.5rem auto;
+}
+
+.faq-pergunta {
+    width: 40rem;
+    text-align: left;
+    background-color: #E6EFF8;
+    border-radius: 12px 12px 0 0;
+    padding: 1rem 2rem;
+    border: 1px solid #d7eaf6;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+
+.pergunta-style {
+    font: 600 1rem 'Open Sans', sans-serif;
+}
+
+.faq-pergunta::after {
+    /* É um código que existe no CSS para modificar a seta no summary */
+    content: "\2b9f";
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .25s;
+}
+
+/* Transição quando abrir a pergunta */
+details[open] .faq-pergunta::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.faq-resposta {
+    background-color: #e6eff88a;
+    padding: 1rem 2rem;
+    width: 40rem;
+    border: 1px solid #e6f0f8;
+    border-top: none;
+    overflow: visible;
+    transition: max-height .28s ease;
+}
+
+details[open] .faq-resposta {
+    max-height: 1000px;
+}
+
+.faq-p {
+    font: 300 1rem 'Open Sans', sans-serif;
+}
+
+
+
+/****** SECTION INFORMAÇÕES ******/
+#informacoes {
+    display: flex;
+    justify-content: center;
+    padding: 2% 7% 4% 7%;
+}
+
+.localizacao-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.localizacao-description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    max-width: 100%;
+}
+
+.loc-desc-logo {
+    flex: 1;
+    min-width: 300px;
+}
+
+#img-info-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info-logo {
+    width: 13rem;
+    height: 6rem;
+}
+
+.localizacao-p {
+    font: 300 1.1rem 'Open Sans', sans-serif;
+    margin-top: 1.5rem;
+    color: #000000;
+    text-align: justify;
+}
+
+.localizacao-card {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+}
+
+.localizacao-icon {
+    width: 7rem;
+    height: 7rem;
+    fill: #000000;
+}
+
+.localizacao-text {
+    display: flex;
+    padding-top: 0.5rem;
+}
+
+#mapa {
+    flex: 1.5;
+    width: 66.5%;
+    height: 22rem;
+}
+
+.info-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96%;
+    flex-wrap: wrap;
+}
+
+.informacoes-h3 {
+    font: 700 1rem 'Montserrat', sans-serif;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.info-text {
+    display: flex;
+    align-items: center;
+}
+
+.info-icon {
+    width: 2rem;
+    height: 2rem;
+    ;
+    margin: 0 0.5rem 0 1rem;
+}
+
+.horario-icon {
+    fill: #000000;
+}
+
+.info-p {
+    font: 300 1.1rem 'Open Sans', sans-serif;
+    color: #000000;
+    text-align: justify;
+}
+
+.icon-whatsapp {
+    fill: #00916E;
+}
+
+.info-section a {
+    font: 300 1.1rem 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.info-section a:link,
+.info-section a:visited {
+    color: #000000;
+}
+
+.info-section a:hover,
+.info-section a:active {
+    color: #000000;
+    font-weight: 400;
+}
+
+.gmail-icon {
+    fill: #D1450F;
+}
+
+
+/****** FOOTER ******/
+footer {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5% 7%;
+}
+
+footer p {
+    font: 700 1rem 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+/* ========== SOBRE ========== */
+/****** SECTION SOBRE ******/
+.section-about {
+    background-color: #ffffff;
+    padding: 0 7%;
+}
+
+.about-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+}
+
+.sobre-title {
+    padding-bottom: 2rem;
+}
+
+.about-text p {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.about-image-wrapper {
+    margin-top: 16px;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 220px;
+    border-radius: 4px;
+    background-color: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #555555;
+}
+
+.benefits-card {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 24px;
+    padding: 20px 20px;
+    align-self: flex-start;
+    width: 320px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.benefit-item:last-child {
+    margin-bottom: 0;
+}
+
+.benefit-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 50%;
+    background-color: #ff7a2d;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25) inset;
+}
+
+.benefit-icon svg {
+    display: block;
+}
+
+.benefit-item p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+
+.section-title-servicos {
+    text-align: center;
+    padding: 16px 24px;
+}
+
+.section-title-servicos h2 {
+    font-size: 1.1rem;
+    color: #0076d6;
+    letter-spacing: 0.08em;
+}
+
+.service-block {
+    padding: 24px 24px;
+}
+
+.service-block-alt {
+    border-left: 4px solid;
+    /* faixa azul na lateral como na imagem */
+}
+
+.service-inner {
+    background-color: #f8f8f8;
+    border-radius: 6px;
+    padding: 24px 26px;
+    display: grid;
+    grid-template-columns: 2fr 1.4fr;
+    gap: 24px;
+    align-items: center;
+}
+
+
+.service-inner {
+    border-left: 6px solid #0076d6;
+    padding-left: 20px;
+}
+
+.service-text h3 {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+}
+
+.service-text h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.service-text p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.service-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.service-icon-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.8rem;
+}
+
+.mini-icon {
+    width: 18px;
+    height: 18px;
+    background-color: #000000;
+    border-radius: 3px;
+}
+
+/* IMAGENS CIRCULARES */
+.service-image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.service-image {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #cccccc;
+    /* cor de fundo, substitua por background-image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #555555;
+}
+
+
+
+
+
+
+
+
+/* ========== RESPONSIVIDADE ========== */
+/****** TELAS MENORES QUE 1270PX ******/
+@media (max-width: 1270px) {
+
+    /* Header */
+    .burger-icon {
+        display: flex !important;
+        flex-direction: column;
+        gap: 6px;
+        position: absolute;
+        right: 7%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2000;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-left nav {
+        display: none;
+    }
+
+    .header-right {
+        padding-right: 4rem;
+    }
+
+    #menu-toggle:checked~.header-left nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        padding: 2rem 0;
+        gap: 2rem;
+        align-items: center;
+        z-index: 999;
+        animation: descerMenu 0.3s ease-in-out forwards;
+        border-top: 1px solid #222;
+    }
+
+    /* Section Clientes */
+    .clientes-text {
+        width: 20rem;
+    }
+
+    .carrossel-container {
+        width: 85%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .slides-track {
+        width: 300%;
+    }
+
+    .slide {
+        width: 33.333%;
+        padding: 0 10px;
+    }
+
+    .cliente-card {
+        height: auto;
+        height: 15rem;
+        padding-bottom: 5rem;
+    }
+
+    .depoimento {
+        padding-right: 2.5rem;
+    }
+
+    .navegacao-setas {
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .seta-prev,
+    .seta-next {
+        font-size: 2rem;
+    }
+
+    /* Section Informações */
+    .loc-desc-logo {
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
+
+    .localizacao-card {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .info-section {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+
+    .info-card {
+        min-width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-icon {
+        margin: 0 0.5rem 0 0;
+    }
+}
+
+/****** TELAS MENORES QUE 1100PX ******/
+@media (max-width: 1100px) {
+
+    /* Section Clientes */
+    .localizacao-description {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .loc-desc-logo {
+        width: 100%;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .localizacao-icon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .localizacao-text {
+        padding-top: 0;
+        margin: 0;
+        align-items: flex-start;
+    }
+
+    /* Section Informações */
+    #mapa {
+        width: 100%;
+        height: 20rem;
+    }
+}
+
+/****** TELAS MENORES QUE 740PX ******/
+@media (max-width: 740px) {
+
+    /* NAV */
+    .header-right {
+        display: none;
+    }
+
+    .header-left {
+        width: 100%;
+    }
+
+    #menu-toggle:checked~.header-right {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        padding: 1.5rem 0;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        border-top: 1px solid #222;
+        z-index: 1000;
+        animation: descerMenu 0.3s ease-in-out forwards;
+    }
+
+    #menu-toggle:checked~.header-left nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12rem;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+        padding: 1rem 0 2rem 0;
+        align-items: center;
+        gap: 1.5rem;
+        z-index: 999;
+        animation: descerMenu 0.3s ease-in-out forwards;
+    }
+
+    /* Section Faq */
+    .faq-pergunta {
+        width: 30rem;
+    }
+
+    .faq-resposta {
+        width: 30rem;
+    }
+
+    /* PÁGINA SOBRE */
+    .about-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-card {
+        margin-top: 16px;
+    }
+
+    .service-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .service-image {
+        margin-top: 12px;
+    }
+
+    .top-inner {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .main-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/****** TELAS MENORES QUE 580PX ******/
+@media (max-width: 580px) {
+
+    /* Section Destaques */
+    #destaques,
+    #clientes,
+    #faq {
+        padding-top: 6%;
+    }
+
+    p {
+        font-size: 1.15rem;
+    }
+
+    .produtos-card {
+        padding-bottom: 1rem;
+    }
+
+    /* Section Clientes */
+    #clientes {
+        gap: 2rem;
+    }
+
+    .clientes-container {
+        gap: 2.5rem;
+    }
+
+    .cliente-card {
+        height: auto;
+        height: 16rem;
+        padding-bottom: 5rem;
+    }
+
+    /* Section Faq */
+    .faq-pergunta {
+        width: 25rem;
+    }
+
+    .faq-resposta {
+        width: 25rem;
+    }
+
+    /* Section Informações */
+    #informacoes {
+        padding-bottom: 6%;
+    }
+
+    /* Footer */
+    footer {
+    padding: 3% 7%;
+}
+}
+
+/* Configuração para uma "animação" quando o menu abrir */
+@keyframes descerMenu {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
