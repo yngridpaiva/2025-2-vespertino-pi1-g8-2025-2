@@ -1135,11 +1135,11 @@ footer p {
 
     /* Section Faq */
     .faq-pergunta {
-        width: 25rem;
+        width: 15rem;
     }
 
     .faq-resposta {
-        width: 25rem;
+        width: 15rem;
     }
 
     /* Section Informações */
@@ -1156,21 +1156,12 @@ footer p {
 @media (max-width: 380px) {
     /* Nav */
     .nav-logo {
-    height: 3.5rem;
+    height: 3rem;
     }
 
     /* Section Clientes */
     .cliente-card {
-        height: 17rem;
-    }
-
-    /* Section Faq */
-    .faq-pergunta {
-        width: 20rem;
-    }
-
-    .faq-resposta {
-        width: 20rem;
+        height: 18rem;
     }
 
     /* Section Informações */
