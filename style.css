@@ -1164,6 +1164,15 @@ footer p {
         height: 20rem;
     }
 
+    /* Section Faq */
+    .faq-pergunta {
+        width: 10rem;
+    }
+
+    .faq-resposta {
+        width: 10rem;
+    }
+
     /* Section Informações */
     #informacoes {
         padding-bottom: 6%;
@@ -1183,3 +1192,4 @@ footer p {
         transform: translateY(0);
     }
 }
+
