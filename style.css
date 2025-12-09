@@ -836,6 +836,9 @@ footer p {
     border-right: 6px solid #0080FF;
 }
 
+.service-inner-right .service-image-wrapper {
+    order: -1;
+}
 
 
 
