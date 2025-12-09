@@ -7,12 +7,8 @@
   <meta name="descripition" content="Central da Estampa - Soluções em Estamparia e Sublimação para Empresas e Eventos.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Central da Estampa</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/static/css/sobre.css" />
 </head>
-
 <body>
   <header>
     <div class="header-left">
@@ -50,7 +46,7 @@
     <section class="section-about">
       <div class="about-inner">
         <div class="about-text">
-          <h1 class="sobre-title sobre-title">QUEM SOMOS</h1>
+          <h1 class="sobre-title quem-somos-title">QUEM SOMOS</h1>
           <p>Nossa história começou em 2022, em um cenário de superação pós-pandemia. Com
             ampla experiência em serigrafia, decidimos fundar a Central da Estampa na Avenida
             Central do Núcleo Bandeirante — daí vem o nosso nome e a nossa raiz local.</p>
@@ -59,62 +55,41 @@
             brilho e durabilidade superior. Nosso diferencial? Entregamos seu pedido embalado,
             identificado e com aquele cheirinho especial que só a gente tem.</p>
           <div class="about-image-wrapper">
-            <img src="img/centra_da_estampa.png" alt="Loja Central da Estampa" />
+            <img src="img/centra_da_estampa.png" alt="Loja Central da Estampa" id="central-da-estampa-img"/>
           </div>
         </div>
         <aside class="benefits-card" aria-label="Benefícios">
           <ul class="benefits-list">
             <li class="benefit-item">
               <span class="benefit-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <circle cx="12" cy="12" r="12" fill="#ffffff" />
-                  <path
-                    d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5.04-6.71l-2.75 3.54-2.16-2.66c-.23-.29-.61-.37-.92-.15-.3.18-.39.56-.21.86l2.85 3.5c.23.28.62.36.93.15l3.5-4.29c.25-.31.19-.77-.12-1.02-.31-.25-.77-.19-1.02.12z"
-                    fill="#ff7a2d" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M40-120v-80h880v80H40Zm120-120q-33 0-56.5-23.5T80-320v-440q0-33 23.5-56.5T160-840h640q33 0 56.5 23.5T880-760v440q0 33-23.5 56.5T800-240H160Zm0-80h640v-440H160v440Zm0 0v-440 440Z"/></svg>
               </span>
               <p>Visualização digital do layout antes da impressão.</p>
             </li>
             <li class="benefit-item">
               <span class="benefit-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <circle cx="12" cy="12" r="12" fill="#ffffff" />
-                  <path
-                    d="M12.17 2.5c.56 0 1.1.19 1.55.58l9.05 7.87c.51.44.8 1.08.8 1.75v8.3c0 1.32-1.08 2.4-2.4 2.4H3.83c-1.32 0-2.4-1.08-2.4-2.4V13.2c0-.67.29-1.31.8-1.75l9.05-7.87c.45-.39 1-.58 1.55-.58z"
-                    fill="#ff7a2d" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg>
               </span>
               <p>Prazos de entrega ágeis para não atrasar seu evento.</p>
             </li>
             <li class="benefit-item">
               <span class="benefit-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <circle cx="12" cy="12" r="12" fill="#ffffff" />
-                  <path
-                    d="M7.5 2c-3.04 0-5.5 2.46-5.5 5.5 0 4.08 5.5 11.5 5.5 11.5s5.5-7.42 5.5-11.5C13 4.46 10.54 2 7.5 2zm0 7.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
-                    fill="#ff7a2d" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M491-200q12-1 20.5-9.5T520-230q0-14-9-22.5t-23-7.5q-41 3-87-22.5T343-375q-2-11-10.5-18t-19.5-7q-14 0-23 10.5t-6 24.5q17 91 80 130t127 35ZM480-80q-137 0-228.5-94T160-408q0-100 79.5-217.5T480-880q161 137 240.5 254.5T800-408q0 140-91.5 234T480-80Zm0-80q104 0 172-70.5T720-408q0-73-60.5-165T480-774Q361-665 300.5-573T240-408q0 107 68 177.5T480-160Zm0-320Z"/></svg>
               </span>
               <p>Utilizamos tintas premium Gênesis que não racham e não desbotam.</p>
             </li>
             <li class="benefit-item">
               <span class="benefit-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <circle cx="12" cy="12" r="12" fill="#ffffff" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 43">
                   <path
-                    d="M16.6915026,12.4744748 L3.50612381,13.2599618 C3.19218622,13.2599618 3.03521743,13.4170592 3.03521743,13.5741566 L1.15159189,20.0151496 C0.8376543,20.8006365 0.99,21.89 1.77946707,22.52 C2.41,22.99 3.50612381,23.1 4.13399899,22.99 L21.714504,14.0454487 C22.6563168,13.5741566 23.1272231,12.6315722 22.9702544,11.6889879 L4.13399899,1.01 C3.34915502,0.9 2.40734225,1.00636533 1.77946707,1.4776575 C0.994623095,2.10604706 0.837654308,3.0486314 1.15159189,3.98722575 L3.03521743,10.4282187 C3.03521743,10.5853161 3.19218622,10.7424135 3.50612381,10.7424135 L16.6915026,11.5279004 C16.6915026,11.5279004 17.1624089,11.5279004 17.1624089,12.0004287 C17.1624089,12.4744748 16.6915026,12.4744748 16.6915026,12.4744748 Z"
-                    fill="#ff7a2d" />
-                </svg>
+                      d="M34.1312 8.797C30.7808 5.42867 26.3196 3.58325 21.5717 3.58325C11.7892 3.58325 3.81625 11.5562 3.81625 21.3387C3.81625 24.4741 4.64041 27.5199 6.18125 30.2074L3.67291 39.4166L13.0792 36.9441C15.6771 38.3595 18.5975 39.112 21.5717 39.112C31.3542 39.112 39.3271 31.1391 39.3271 21.3566C39.3271 16.6087 37.4817 12.1474 34.1312 8.797ZM21.5717 36.102C18.92 36.102 16.3221 35.3853 14.0467 34.0416L13.5092 33.7191L7.91916 35.1882L9.40625 29.7416L9.04791 29.1862C7.57875 26.8391 6.79041 24.1158 6.79041 21.3387C6.79041 13.2045 13.4196 6.57534 21.5537 6.57534C25.4954 6.57534 29.2042 8.11617 31.9812 10.9112C34.7762 13.7062 36.2992 17.4149 36.2992 21.3566C36.335 29.4908 29.7058 36.102 21.5717 36.102ZM29.67 25.0653C29.2221 24.8503 27.0362 23.7753 26.6421 23.6141C26.23 23.4708 25.9433 23.3991 25.6387 23.8291C25.3342 24.277 24.4921 25.2803 24.2412 25.567C23.9904 25.8716 23.7217 25.9074 23.2737 25.6745C22.8258 25.4595 21.3925 24.9758 19.7083 23.4708C18.3825 22.2883 17.5046 20.837 17.2358 20.3891C16.985 19.9412 17.2 19.7083 17.4329 19.4753C17.63 19.2783 17.8808 18.9558 18.0958 18.7049C18.3108 18.4541 18.4004 18.257 18.5437 17.9703C18.6871 17.6658 18.6154 17.4149 18.5079 17.1999C18.4004 16.9849 17.5046 14.7991 17.1462 13.9033C16.7879 13.0433 16.4117 13.1508 16.1429 13.1328C15.8742 13.1328 15.5875 13.1328 15.2829 13.1328C14.9783 13.1328 14.5125 13.2403 14.1004 13.6883C13.7062 14.1362 12.5596 15.2112 12.5596 17.397C12.5596 19.5828 14.1542 21.697 14.3692 21.9837C14.5842 22.2883 17.5046 26.7674 21.9479 28.6845C23.005 29.1503 23.8292 29.4191 24.4742 29.6162C25.5312 29.9566 26.4987 29.9028 27.2692 29.7953C28.1292 29.6699 29.9029 28.7203 30.2612 27.6812C30.6375 26.642 30.6375 25.7641 30.5121 25.567C30.3867 25.3699 30.1179 25.2803 29.67 25.0653Z" />
+              </svg>
               </span>
               <p>Atendimento ágil e humanizado direto pelo WhatsApp.</p>
             </li>
             <li class="benefit-item">
               <span class="benefit-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                  <circle cx="12" cy="12" r="12" fill="#ffffff" />
-                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2l-2.81 6.63L2 9.24l5.46 4.73L5.82 21z"
-                    fill="#ff7a2d" />
-                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Zm49 69-194 64 124 179-4 191 200-55 200 56-4-192 124-177-194-66-126-165-126 165Zm126 135Z"/></svg>
               </span>
               <p>Prensas térmicas que garantem brilho e durabilidade.</p>
             </li>
