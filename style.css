@@ -672,7 +672,7 @@ footer p {
 
 /* ========== SOBRE ========== */
 /****** SECTION SOBRE ******/
-.section-about {
+#section-about {
     background-color: #ffffff;
     margin: 0 7% 4%;
 }
